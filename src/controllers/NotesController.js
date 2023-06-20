@@ -1,6 +1,4 @@
 const knex = require('../database/knex')
-const { use } = require('../routes/notes.routes')
-
 class NotesController {
   async create(request, response) {
     const { title, description, tags, links } = request.body
